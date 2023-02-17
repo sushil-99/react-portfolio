@@ -16,14 +16,12 @@ export const Contact = () => {
 
             <div className="email-section header">
                 <p>reach out over email</p>
-                <a href="mailto:sushilbadal123@gmail.com">
-                    sushilbadal123@gmail.com
-                    <div className="email">
-
-                        <i className="fa-solid fa-paper-plane" style={{ color: 'white' }} ></i>
-
+                <div className="email">
+                    <a href="mailto:sushilbadal123@gmail.com">sushilbadal123@gmail.com</a>
+                    <div className="send">
+                        <i className="fa-solid fa-paper-plane"></i>
                     </div>
-                </a>
+                </div>
 
             </div>
         </section>
