@@ -1,9 +1,11 @@
 import React from 'react'
 import projects from '../assets/3.jpg'
+import { Layout } from './Layout'
 
 export const Projects = () => {
     return (
-        < section className="section4 header" id="projects" >
+        <Layout>
+            < section className="section4 header" id="projects" >
             <h1 className="title">My Projects</h1>
 
             <div className="projects-container grid">
@@ -39,5 +41,7 @@ export const Projects = () => {
                 </div>
             </div>
         </section >
+        </Layout>
+        
     )
 }

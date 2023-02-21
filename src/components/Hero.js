@@ -1,10 +1,12 @@
 import React from 'react'
 import pp from '../assets/2-removebg.png'
 import resume from '../assets/resume.pdf'
+import { Layout } from './Layout'
 
 export const Hero = () => {
   return (
-    <section className="section1 grid">
+    <Layout>
+      <section className="section1 grid">
           <div className="left">
             <img src={pp} alt="myimage" />
           </div>
@@ -22,5 +24,7 @@ export const Hero = () => {
           </div>
 
         </section>
+    </Layout>
+    
   )
 }

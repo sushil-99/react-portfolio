@@ -1,8 +1,10 @@
 import React from 'react'
+import { Layout } from './Layout'
 
 export const Contact = () => {
     return (
-        <section className="section6 header" id="contact" >
+        <Layout>
+            <section className="section6 header" id="contact" >
             <h1 className="title">Get in Touch</h1>
 
             <div className="socials header">
@@ -25,5 +27,7 @@ export const Contact = () => {
 
             </div>
         </section>
+        </Layout>
+        
     )
 }

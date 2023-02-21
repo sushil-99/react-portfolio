@@ -1,8 +1,12 @@
 import React from 'react'
+import { Info } from './Info'
+import { Layout } from './Layout'
 
 export const Skills = () => {
     return (
-        <section className="section3 header" id="skills">
+        <Layout>
+            <Info/>
+            <section className="section3 header" id="skills">
             <div className="skills-container header">
                 <div className="header">
                     <i className="fa-brands fa-html5"></i>
@@ -27,5 +31,7 @@ export const Skills = () => {
             </div>
 
         </section >
+        </Layout>
+        
     )
 }

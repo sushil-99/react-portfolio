@@ -1,11 +1,12 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 
 export const Header = () => {
   return (
     <>
          <header className="header primary-header">
           <div className=" header logo">
-            <h1>Sushil Badal</h1>
+           <Link to="/"><h1>Sushil Badal</h1></Link> 
             <div>
               <h3 className="line">Web Developer</h3>
             </div>
@@ -17,19 +18,19 @@ export const Header = () => {
             </label>
             <ul className=" header primary-nav">
               <li>
-                <a href="#">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="#skills">Skills</a>
+                <Link to="/skills">Skills</Link>
               </li>
               <li>
-                <a href="#projects">Projects</a>
+                <Link to="/projects">Projects</Link>
               </li>
               <li>
-                <a href="#about">About</a>
+                <Link to="/about-me">About</Link>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <Link to="/contact">Contact</Link>
               </li>
 
             </ul>
