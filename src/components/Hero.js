@@ -22,7 +22,6 @@ export const Hero = () => {
               </button>
             </a>
           </div>
-
         </section>
     </Layout>
     
