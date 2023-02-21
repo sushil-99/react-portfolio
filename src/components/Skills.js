@@ -1,8 +1,11 @@
 import React from 'react'
+import { Info } from './Info'
 
 export const Skills = () => {
     return (
-        <section className="section3 header" id="skills">
+        <>
+            <Info/>
+            <section className="section3 header" id="skills">
             <div className="skills-container header">
                 <div className="header">
                     <i className="fa-brands fa-html5"></i>
@@ -27,5 +30,7 @@ export const Skills = () => {
             </div>
 
         </section >
+        </>
+        
     )
 }

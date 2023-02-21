@@ -1,3 +1,5 @@
+import { object } from 'prop-types';
+import { useState } from 'react';
 import './App.css';
 // importing images
 
@@ -14,6 +16,18 @@ import { ScrollBtn } from './components/ScrollBtn';
 import { Skills } from './components/Skills';
 
 function App() {
+
+  const [showScreen, setShowScreen] = useState("")
+  console.log(showScreen)
+
+  const screens =
+  {
+    skills: <Skills/>,
+    projects: <Projects/>,
+    about: <AboutMe/>,
+    contact: <Contact/>
+  }
+
   return (
     <div>
       {/* <!-- DARK_MODE_BUTTON --> */}
@@ -21,32 +35,17 @@ function App() {
 
       <div className="wrapper">
         {/* <!-- header section --> */}
-        <Header />
+        <Header setShowScreen={setShowScreen} />
 
-        {/* <!-- hero section --> */}
+        {!showScreen ? (
+          <>
+            <Hero/>
+            {Object.values(screens)}
+          </>
+        ): (
+          screens[showScreen]
+        )}
 
-        <Hero />
-
-
-        {/* <!-- info section --> */}
-
-        <Info />
-
-        {/* <!-- skills section --> */}
-
-        <Skills/>
-
-        {/* <!-- projects section --> */}
-
-        <Projects/>
-
-        {/* <!-- about me section --> */}
-
-        <AboutMe/>
-
-        {/* <!-- contact section --> */}
-
-        <Contact/>
 
 
         {/* <!-- footer section --> */}

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Header = () => {
+export const Header = ({setShowScreen}) => {
   return (
     <>
          <header className="header primary-header">
@@ -17,19 +17,19 @@ export const Header = () => {
             </label>
             <ul className=" header primary-nav">
               <li>
-                <a href="#">Home</a>
+                <a onClick={() => setShowScreen("")} href="#!">Home</a>
               </li>
               <li>
-                <a href="#skills">Skills</a>
+                <a onClick={() => setShowScreen("skills")} href="#!">Skills</a>
               </li>
               <li>
-                <a href="#projects">Projects</a>
+                <a onClick={() => setShowScreen("projects")} href="#!">Projects</a>
               </li>
               <li>
-                <a href="#about">About</a>
+                <a onClick={() => setShowScreen("about")} href="#!">About</a>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <a onClick={() => setShowScreen("contact")} href="#!">Contact</a>
               </li>
 
             </ul>
